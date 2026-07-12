@@ -1,2 +1,33 @@
 language = "nodejs"
 run = "npm start"
+modules = ["web", "nodejs-20"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Bot"
+
+[[workflows.workflow]]
+name = "Bot"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node index.js"
+
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["libuuid", "pkg-config", "python3", "gcc", "gnumake"]
