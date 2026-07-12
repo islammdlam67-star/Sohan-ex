@@ -1,4 +1,4 @@
-{
+ {
   "facebookAccount": {
     "email": "",
     "password": "",
@@ -12,7 +12,7 @@
   "antiInbox": false,
   "language": "en",
   "notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
-  "nickNameBot": "• 𝐓𝐀𝐍𝐈𝐒𝐇𝐀 𝐁𝐎𝐓 •",
+  "nickNameBot": "[ ? ] • 𝐓𝐀𝐍𝐈𝐒𝐇𝐀 𝐁𝐎𝐓 •",
   "prefix": "?",
   "api": "https://api.noobs-api.rf.gd/dipto",
   "approval": false,
@@ -23,7 +23,7 @@
     ],
     "kick": [
       "🦶",
-      "⚠️"
+      "⚠"
     ]
   },
   "adminOnly": {
@@ -31,34 +31,43 @@
     "ignoreCommand": []
   },
   "adminBot": [
-       "100009987932864",
-		"61586083208105",
-		"61563924155936"
+    "61589012485764",
+    "61563924155936",
+    ""
   ],
-  "mainAdmin": [
-    "100009987932864",
-		"61586083208105",
-		"61563924155936"
+  "developers": [
+    "61589012485764",
+    "",
+    "61563924155936"
+  ],
+  "handlerReaction": {
+    "enable": true,
+    "HandelReactionMain": [
+      "61589012485764",
+      "61563924155936",
+      ""
+    ]
+  },
+  "premium": [
+    "61589012485764",
+    "61563924155936",
+    "",
+    ""
   ],
   "whiteListMode": {
     "enable": false,
-    "whiteListIds": [
-      "",
-      ""
-    ],
+    "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds list can use the bot"
   },
   "whiteListModeThread": {
     "enable": false,
-    "whiteListThreadIds": [
-      ""
-    ],
+    "whiteListThreadIds": [],
     "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
     "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
   },
   "database": {
-    "type": "mongodb",
-    "uriMongodb": "mongodb+srv://bossbayjid14:bayjid110@cluster0.vombiex.mongodb.net/retryWrites=true&w=majority&appName=Cluster0",
+    "type": "sqlite",
+    "uriMongodb": "",
     "autoSyncWhenStart": false,
     "autoRefreshThreadInfoFirstTime": true,
     "notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
@@ -72,7 +81,7 @@
       "refreshToken": "1//04cWW09MPjCJ_CgYIARAAGAQSNwF-L9Ire-jJJEWxsxMhSN7TIWIxasWAgO185qwOrVpFwcCVWGhdPknecew-nRUQk9GAnLG7bXw"
     },
     "gRecaptcha": {
-     "siteKey": "",
+      "siteKey": "",
       "secretKey": ""
     }
   },
@@ -161,10 +170,10 @@
     "updatePresence": true,
     "listenTyping": true,
     "logLevel": "error",
-    "selfListen": false,
+    "selfListen": true,
     "selfListenEvent": false,
-    "autoMarkDelivery": false,
-    "autoReconnect": false,
-    "notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
+    "autoMarkDelivery": true,
+    "autoReconnect": true,
+    "notes": "Document: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
   }
 }
